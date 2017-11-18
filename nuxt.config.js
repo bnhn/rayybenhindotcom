@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'portfolio',
+    title: 'Rayy Benhin',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Personal portfolio built with Nuxt.js' }
+      { hid: 'description', name: 'description', content: 'Personal portfolio of Rayy Benhin' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -26,7 +26,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
