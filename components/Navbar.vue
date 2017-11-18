@@ -1,24 +1,31 @@
 <template>
-  <div class="container">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <div class="navbar-items navbar-start">
+    <nav class="breadcrumb is-medium has-bullet-separator" role="navigation" aria-label="main navigation">
+      <ul>
+        <li>
           <nuxt-link class="navbar-item item" to="/">Home</nuxt-link>
-          <span class="navbar-item">|</span>
+        </li>
+        <li>
           <nuxt-link class="navbar-item item" to="/projects">Projects</nuxt-link>
-        </div>
-      </div>
+        </li>
+      </ul>
     </nav>
-  </div>
 </template>
 
 <style scoped>
-div > .navbar-items {
+nav {
   font-size: 1.2rem;
-  display: inline-block;
+  color: #111;
+}
+
+ul {
+  margin-left: 1rem;
+}
+a {
+  color: inherit;
 }
 .item:hover {
   text-decoration: underline;
+  background-color: inherit;
   color: inherit;
 }
 </style>
